@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ConversationsViewController.swift
 //  FirebaseChatApp
 //
 //  Created by 권정근 on 1/14/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConversationsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
