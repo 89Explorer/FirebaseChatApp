@@ -57,5 +57,6 @@
     <true/> <!-- or <false/> if you want to request user consent -->
     <key>FacebookAdvertiserIDCollectionEnabled</key>
     <true/> <!-- or <false/> if you want to request user consent -->
+    
 </dict>
 </plist>
