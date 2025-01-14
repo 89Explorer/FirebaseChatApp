@@ -5,6 +5,7 @@ target 'FirebaseChatApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+
   # Pods for FirebaseChatApp
 
   target 'FirebaseChatAppTests' do

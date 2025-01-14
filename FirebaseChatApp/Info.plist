@@ -2,26 +2,60 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>FirebaseAppDelegateProxyEnabled</key>
-	<false/>
-	<key>UIApplicationSceneManifest</key>
-	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
-		<key>UISceneConfigurations</key>
-		<dict>
-			<key>UIWindowSceneSessionRoleApplication</key>
-			<array>
-				<dict>
-					<key>UISceneConfigurationName</key>
-					<string>Default Configuration</string>
-					<key>UISceneDelegateClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
-				</dict>
-			</array>
-		</dict>
-	</dict>
+    <key>FirebaseAppDelegateProxyEnabled</key>
+    <false/>
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                    <key>UISceneStoryboardFile</key>
+                    <string>Main</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+    
+    <!-- Facebook URL Scheme -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb1159637492336995</string> <!-- Replace "APP-ID" with your Facebook App ID -->
+            </array>
+        </dict>
+    </array>
+    
+    <!-- Facebook App Settings -->
+    <key>FacebookAppID</key>
+    <string>1159637492336995</string> <!-- Replace "APP-ID" with your Facebook App ID -->
+    <key>FacebookClientToken</key>
+    <string>18f161c606165baab7b574c9c70bcb03</string> <!-- Replace "CLIENT-TOKEN" with your Facebook Client Token -->
+    <key>FacebookDisplayName</key>
+    <string>FirebaseChatApp</string> <!-- Replace "APP-NAME" with your App Name -->
+
+    <!-- Facebook Login Permissions -->
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fb-messenger-share-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+    </array>
+
+    <!-- Facebook Auto Events and Advertiser ID -->
+    <key>FacebookAutoLogAppEventsEnabled</key>
+    <true/> <!-- or <false/> if you want to request user consent -->
+    <key>FacebookAdvertiserIDCollectionEnabled</key>
+    <true/> <!-- or <false/> if you want to request user consent -->
 </dict>
 </plist>
